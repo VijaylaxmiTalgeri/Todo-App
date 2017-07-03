@@ -1,0 +1,83 @@
+body {
+ 	font-family: 'Zilla Slab';
+ 		/*Taken from uigradients*/
+	background: #360033;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ #container {
+	box-shadow: 0 0 3px rgba(0,0,0,0.6);
+	width: 360px;
+	margin : 100px auto; /*setting to the center*/
+	background: #f7f7f7; /*light-gray*/
+	font-size: 20px;
+	font-weight: normal;
+ }
+
+ h1 {
+ 	background: #2980b9;
+ 	text-transform: uppercase;
+ 	color: white;
+ 	margin : 0;
+ 	padding: 10px 20px;
+ }
+ ul {
+ 	list-style: none;	/*removes all the bullet points*/
+ 	margin : 0;
+ 	padding: 0;
+ }
+
+ li {
+ 	background: white;
+ 	height: 40px;
+ 	line-height: 40px;	/*text takes the entire 40px, and maintains top and bottom equal spacing*/
+ 	color: #666;
+ }
+
+ li:nth-child(2n) {
+ 	background: #f7f7f7;/*light-gray*/
+ }
+
+ input {
+ 	color: #2980b9;
+ 	font-size: 18px;
+ 	background: #f7f7f7;
+ 	width: 100%;
+ 	padding: 13px 13px 13px 20px;
+ 	box-sizing: border-box;
+ 	border: 3px solid rgba(0,0,0,0); /*Gives in ainvisble border around text-box*/
+ }
+
+ input:focus {
+ 	background: #fff;
+ 	border: 3px solid #2980b9;
+ 	outline: none;
+ }
+
+ span {
+ 	background: #e74c3c;
+ 	height: 40px;
+ 	margin-right: 20px;
+ 	text-align: center;
+ 	color: white;
+ 	width : 0; /*width will be 0 until we hover */
+ 	display: inline-block;
+ 	transition : 0.2s linear; /*when we hover, the transition has to be smooth*/
+ 	opacity : 0; /* even when the icons have width 0, the are still slightly visible, so make opacity 0*/
+ }
+
+ li:hover span {
+ 	width : 40px; /*when we hover over an li, set the width of span to 40px*/
+ 	opacity: 1;
+ }
+
+ .fa-plus {
+	float: right;
+}
+
+.completed {
+ 	color : gray;
+ 	text-decoration: line-through;
+ }
+
